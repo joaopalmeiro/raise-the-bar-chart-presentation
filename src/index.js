@@ -36,6 +36,7 @@ const underline = {
   textDecoration: "underline",
   textDecorationStyle: "dotted",
   textDecorationColor: colors["nord9"],
+  textUnderlineOffset: "0.05em",
 };
 
 // SPECTACLE_CLI_THEME_START
