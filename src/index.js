@@ -66,24 +66,31 @@ const template = ({ slideNumber, numberOfSlides }) => (
     <Box padding={2}>
       <FullScreen size={16} color={colors["nord3"]} />
     </Box>
-    <Box padding="0px">
-      <Text fontSize="16px">• {slideNumber}</Text>
-    </Box>
+    {slideNumber === 1 ? (
+      <Box padding="0px">
+        <Text fontSize="16px">👋</Text>
+      </Box>
+    ) : (
+      <Box padding="0px">
+        <Text fontSize="16px">• {slideNumber}</Text>
+      </Box>
+    )}
   </FlexBox>
 );
 // SPECTACLE_CLI_TEMPLATE_END
 
-const SlideFragments = () => (
-  <Slide>
-    <Text>This is also a slide fragment.</Text>
-    <Appear>
-      <Text>This item shows up!</Text>
-    </Appear>
-    <Appear>
-      <Text>This item also shows up!</Text>
-    </Appear>
-  </Slide>
-);
+// Usage: <SlideFragments />
+// const SlideFragments = () => (
+//   <Slide>
+//     <Text>This is also a slide fragment.</Text>
+//     <Appear>
+//       <Text>This item shows up!</Text>
+//     </Appear>
+//     <Appear>
+//       <Text>This item also shows up!</Text>
+//     </Appear>
+//   </Slide>
+// );
 
 const Presentation = () => (
   <Deck theme={theme} template={template}>
@@ -99,7 +106,6 @@ const Presentation = () => (
         </Text>
       </FlexBox>
     </Slide>
-    <SlideFragments />
   </Deck>
 );
 
