@@ -93,8 +93,9 @@ const Presentation = () => (
           Raise the Bar (📊)
         </Heading>
         <Text color="primary" fontSize="h3" textAlign="center">
-          A summary of <span style={underline}>empirical findings</span> and new{" "}
-          <span style={underline}>questions</span> in Data Visualization
+          A summary of <span style={underline}>empirical findings</span> and new
+          (or not so new) <span style={underline}>questions</span> in Data
+          Visualization
         </Text>
       </FlexBox>
     </Slide>
