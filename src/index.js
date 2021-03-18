@@ -36,6 +36,7 @@ const underline = {
   textDecoration: "underline",
   textDecorationStyle: "dotted",
   textDecorationColor: colors["nord9"],
+  // More info: https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset
   textUnderlineOffset: "0.05em",
 };
 
