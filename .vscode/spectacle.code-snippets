@@ -3,5 +3,10 @@
     "prefix": ["appear"],
     "body": ["<Appear><Text>$0</Text></Appear>"],
     "description": "Combining Appear and Text."
+  },
+  "span + underline": {
+    "prefix": ["underline"],
+    "body": ["<span style={underline}>$0</span>"],
+    "description": "Combining span and the underline class."
   }
 }

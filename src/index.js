@@ -209,6 +209,33 @@ const Presentation = () => (
           It breaks a visual convention of bar graphs (proportionality).
         </Text>
       </Appear>
+      <Appear>
+        <Text>
+          Question:{" "}
+          <span style={underline}>
+            What is the impact on subjective assessments of data across multiple
+            charts?
+          </span>
+        </Text>
+      </Appear>
+    </Slide>
+    <Slide>HERE</Slide>
+    <Slide>
+      <Heading>
+        Biased Average Position Estimates in Line and Bar Graphs
+      </Heading>
+    </Slide>
+    <Slide>
+      <Heading>Aspect Ratio Biases Recall of Position Encodings</Heading>
+      <Appear>
+        <Text>Experimental setup similar to the previous one</Text>
+      </Appear>
+    </Slide>
+    <Slide>
+      <Heading>Precision in Pictorial Bar Charts</Heading>
+    </Slide>
+    <Slide>
+      <Heading>Good Fonts for Dyslexia</Heading>
     </Slide>
   </Deck>
 );
