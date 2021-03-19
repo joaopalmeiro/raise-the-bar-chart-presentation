@@ -5,6 +5,12 @@
     "body": ["<Appear><Text>$1</Text></Appear>"],
     "description": "Combine the `<Appear />` and `<Text />` components."
   },
+  "<Slide /> + <Heading />": {
+    "scope": "javascript",
+    "prefix": ["sh"],
+    "body": ["<Slide><Heading>$1</Heading></Slide>"],
+    "description": "Combine the `<Slide />` and `<Heading />` components."
+  },
   "<span> + .underline": {
     "scope": "javascript",
     "prefix": ["underline"],
