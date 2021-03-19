@@ -181,15 +181,34 @@ const Presentation = () => (
     </Slide>
     <Slide>
       <Heading>“No pajamas all day”</Heading>
-      <Text>📄 Readability and Precision in Pictorial Bar Charts</Text>
+      <Text>
+        📄 Readability and Precision in{" "}
+        <span style={underline}>Pictorial Bar Charts</span>
+      </Text>
       <Text>🧑‍🤝‍🧑 D. Skau, R. Kosara</Text>
       <Text>🗓️ 2017</Text>
     </Slide>
     <Slide>
       <Heading>“Tower of Pisa yes, italics no”</Heading>
-      <Text>📄 Good Fonts for Dyslexia</Text>
+      <Text>
+        📄 Good Fonts for <span style={underline}>Dyslexia</span>
+      </Text>
       <Text>🧑‍🤝‍🧑 L. Rello, R. Baeza-Yates</Text>
       <Text>🗓️ 2013</Text>
+    </Slide>
+    <Slide>
+      <Heading>Truncating the Y-Axis</Heading>
+      <Appear>
+        <Text>
+          Truncating the Y-axis can be beneficial or harmful (depending on the
+          type and purpose).
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>
+          It breaks a visual convention of bar graphs (proportionality).
+        </Text>
+      </Appear>
     </Slide>
   </Deck>
 );

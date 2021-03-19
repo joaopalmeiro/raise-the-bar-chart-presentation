@@ -1,0 +1,7 @@
+{
+  "Appear + Text": {
+    "prefix": ["appear"],
+    "body": ["<Appear><Text>$0</Text></Appear>"],
+    "description": "Combining Appear and Text."
+  }
+}
