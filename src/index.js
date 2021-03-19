@@ -206,20 +206,25 @@ const Presentation = () => (
       </Appear>
       <Appear>
         <Text>
-          It breaks a visual convention of bar graphs (proportionality).
+          It breaks a visual convention of bar charts (<i>proportionality</i>).
         </Text>
       </Appear>
       <Appear>
         <Text>
-          Question:{" "}
+          Question: What is the{" "}
           <span style={underline}>
-            What is the impact on subjective assessments of data across multiple
-            charts?
-          </span>
+            impact on subjective assessments of data
+          </span>{" "}
+          across multiple charts?
         </Text>
       </Appear>
     </Slide>
-    <Slide>HERE</Slide>
+    <Slide>
+      <Heading>Truncating the Y-Axis</Heading>
+      <Appear>
+        <Text>Question: HERE</Text>
+      </Appear>
+    </Slide>
     <Slide>
       <Heading>
         Biased Average Position Estimates in Line and Bar Graphs
