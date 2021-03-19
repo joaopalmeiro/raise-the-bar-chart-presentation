@@ -574,6 +574,12 @@ const Presentation = () => (
     <Slide>
       <Heading>Aspect Ratio Biases</Heading>
       <Appear>
+        <Text>
+          It addresses one of the limitations of the previous paper: aspect
+          ratios.
+        </Text>
+      </Appear>
+      <Appear>
         <Text>The experimental setup is similar to the previous one.</Text>
       </Appear>
     </Slide>
