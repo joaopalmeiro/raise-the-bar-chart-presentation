@@ -576,7 +576,13 @@ const Presentation = () => (
       <Appear>
         <Text>
           It addresses one of the limitations of the previous paper: aspect
-          ratios.
+          ratios (an incidental visual property).
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>
+          There were previous conflicting findings (overestimation vs.
+          underestimation). But why?
         </Text>
       </Appear>
       <Appear>
@@ -587,10 +593,74 @@ const Presentation = () => (
     <Slide>
       <Heading>Aspect Ratio Biases</Heading>
       <Text>
-        <span style={underline}>Food for thought</span>:
+        Experiment 1: Does the aspect ratio impact the position estimate
+        (constant area)?
       </Text>
       <Appear>
-        <Text>HERE</Text>
+        <Text>
+          Experiment 2: What about the area (another incidental visual
+          property)?
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>
+          Experiment 3 (sanity check): How much of this bias is driven by
+          memory?
+        </Text>
+      </Appear>
+    </Slide>
+
+    <Slide>
+      <Heading>Aspect Ratio Biases</Heading>
+      <Text>
+        <span style={underline}>Main conclusions</span> (statistically
+        speaking):
+      </Text>
+      <UnorderedList>
+        <Appear>
+          <ListItem>
+            Bars in the square condition were not significantly biased
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            Bars in the wide condition were significantly overestimated
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            Bars in the tall condition were significantly underestimated
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            In comparison, bars with square and wide aspect ratios were not
+            nearly as prone to error as those with tall aspect ratios
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            Any error could be attributed to any of these components: memory,
+            perception, and motor error. Memory is what is at stake in this
+            study.
+          </ListItem>
+        </Appear>
+      </UnorderedList>
+    </Slide>
+
+    <Slide>
+      <Heading>Takeaways</Heading>
+      <Appear>
+        <Text>
+          It seems that people are biased to remember a bar mark as being more
+          similar to a prototypical square.
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>
+          We must control the aspect ratio of our bar charts, at least when the
+          number of categories is relatively limited.
+        </Text>
       </Appear>
     </Slide>
 
