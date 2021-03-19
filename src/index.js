@@ -460,7 +460,21 @@ const Presentation = () => (
       </Text>
       <UnorderedList>
         <Appear>
-          <ListItem>HERE</ListItem>
+          <ListItem>
+            The average position of the line was underestimated
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            The bottom line average was more underestimated than the top line
+            average
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            Participants did not <i>simply use</i> the lowest point or an
+            average between the highest and lowest point
+          </ListItem>
         </Appear>
       </UnorderedList>
     </Slide>
@@ -468,10 +482,92 @@ const Presentation = () => (
     <Slide>
       <Heading>Biased Average Position Estimates</Heading>
       <Text>
-        <span style={underline}>Reasoning</span>:
+        <span style={underline}>Main conclusions</span> (statistically
+        speaking):
       </Text>
+      <UnorderedList>
+        <Appear>
+          <ListItem>
+            The average position of the bars was overestimated
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            The bottom bars average was more overestimated than the top bars
+            average
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            Participants did not <i>simply use</i> the highest point or an
+            average between the highest and lowest point
+          </ListItem>
+        </Appear>
+      </UnorderedList>
+    </Slide>
+
+    <Slide>
+      <Heading>Biased Average Position Estimates</Heading>
+      <Text>
+        <span style={underline}>Main conclusions</span> (statistically
+        speaking):
+      </Text>
+      <UnorderedList>
+        <Appear>
+          <ListItem>
+            For 2 data series, there is the "perception pull" effect: position
+            estimates for a target data series were <i>pulled</i> toward the
+            irrelevant data series
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            For top lines and bottom bars, it exaggerated the underestimation
+            and overestimation, respectively
+          </ListItem>
+        </Appear>
+      </UnorderedList>
+    </Slide>
+
+    <Slide>
+      <Heading>Biased Average Position Estimates</Heading>
+      <Text>
+        <span style={underline}>Main conclusions</span> (statistically
+        speaking):
+      </Text>
+      <UnorderedList>
+        <Appear>
+          <ListItem>
+            For bottom lines and top bars, it reduced the underestimation and
+            overestimation, respectively
+          </ListItem>
+        </Appear>
+        <Appear>
+          <ListItem>
+            The estimation error did not depend on whether the line or bar was
+            noisy or uniform
+          </ListItem>
+        </Appear>
+      </UnorderedList>
+    </Slide>
+
+    <Slide>
+      <Heading>Takeaways</Heading>
       <Appear>
-        <Text>HERE</Text>
+        <Text>The position encoding channel is not innocuous.</Text>
+      </Appear>
+      <Appear>
+        <Text>
+          In general, since judgments were more precise for bars compared to
+          lines, we might consider using bars to show our data (ignoring other
+          constraints).
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>
+          We can plot two data series in different subcharts to avoid the
+          "perceptual pull" effect.
+        </Text>
       </Appear>
     </Slide>
 
@@ -479,6 +575,16 @@ const Presentation = () => (
       <Heading>Aspect Ratio Biases</Heading>
       <Appear>
         <Text>The experimental setup is similar to the previous one.</Text>
+      </Appear>
+    </Slide>
+
+    <Slide>
+      <Heading>Aspect Ratio Biases</Heading>
+      <Text>
+        <span style={underline}>Food for thought</span>:
+      </Text>
+      <Appear>
+        <Text>HERE</Text>
       </Appear>
     </Slide>
 
