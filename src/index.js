@@ -666,10 +666,68 @@ const Presentation = () => (
 
     <Slide>
       <Heading>Precision in Pictorial Bar Charts</Heading>
+      <Appear>
+        <Text>What about beautifying our bar charts?</Text>
+      </Appear>
+      <Appear>
+        <Text>
+          They conducted 1 crowdsourced online experiment with absolute and
+          relative comparisons.
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>
+          Pictorial bar charts reduce accuracy, but not beyond the effect
+          already observed for their shape.
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>They also do not significantly increase response time.</Text>
+      </Appear>
+    </Slide>
+
+    <Slide>
+      <Heading>Takeaways</Heading>
+      <Appear>
+        <Text>
+          Pictorial bar charts may not be as problematic as they are often
+          assumed and can be used with accuracy in mind as well.
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>
+          However, avoid versions whose bars do not have a clear horizontal mark
+          indicating the top.
+        </Text>
+      </Appear>
     </Slide>
 
     <Slide>
       <Heading>Good Fonts for Dyslexia</Heading>
+      <Appear>
+        <Text>
+          Dyslexia is a problematic <i>hidden</i> disability. What can we expect
+          from the effect of the font on reading performance?
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>1 experiment with eye-tracking technology.</Text>
+      </Appear>
+    </Slide>
+
+    <Slide>
+      <Heading>Takeaways</Heading>
+      <Appear>
+        <Text>Stick with Arial (or similar).</Text>
+      </Appear>
+      <Appear>
+        <Text>
+          Avoid <i>italic</i> sources.
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>There seems to be no need to use the OpenDyslexic font.</Text>
+      </Appear>
     </Slide>
 
     <Slide>
