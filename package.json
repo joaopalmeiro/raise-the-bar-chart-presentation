@@ -5,7 +5,10 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack",
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot",
+    "pdf": "decktape generic --size=1920x1080 --max-slides=98 http://localhost:8080/ slides.pdf",
+    "pdf2": "decktape generic --size=1920x1080 --max-slides=98 dist/index.html slides.pdf",
+    "export": "npm run build && npm run pdf2"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -19,6 +22,7 @@
     "@babel/preset-react": "^7.12.7",
     "@mdx-js/react": "^1.6.22",
     "babel-loader": "^8.0.6",
+    "decktape": "^3.1.0",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
     "raw-loader": "^4.0.0",
