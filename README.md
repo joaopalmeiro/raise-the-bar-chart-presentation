@@ -35,6 +35,10 @@ Building the dist version of the project is as easy as running
 npm run build
 ```
 
+## Development
+
+- Install [ImageMagick](https://imagemagick.org/) to run the `merge` script.
+
 ## Notes
 
 - `npx -p spectacle-cli spectacle-boilerplate` or `npx -p spectacle-cli spectacle-boilerplate -d slides`.
