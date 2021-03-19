@@ -733,7 +733,7 @@ const Presentation = () => (
       </Appear>
       <Appear>
         <Text>
-          Avoid <i>italic</i> sources.
+          Avoid <i>italic</i> fonts.
         </Text>
       </Appear>
       <Appear>
