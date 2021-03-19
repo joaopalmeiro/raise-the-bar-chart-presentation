@@ -44,6 +44,7 @@ npm run build
 - [Language identifiers in VS Code](https://code.visualstudio.com/docs/languages/identifiers#_known-language-identifiers).
 - [DeckTape](https://github.com/astefanutti/decktape):
   - Run: `` `npm bin`/decktape `` (use the backticks).
+  - `` `npm bin`/decktape generic -h ``.
   - Download Chromium manually ([source](https://stackoverflow.com/a/60843949)): `node node_modules/decktape/node_modules/puppeteer/install.js` (the error was not due to the version of [ChromeDriver](https://chromedriver.chromium.org/)).
   - Use `--max-slides` to prevent the export from being endless ([source](https://github.com/astefanutti/decktape/issues/77#issuecomment-262747521)).
 - `http://localhost:8080/?exportMode=true`.
