@@ -460,9 +460,19 @@ const Presentation = () => (
       </Text>
       <UnorderedList>
         <Appear>
-          <ListItem></ListItem>
+          <ListItem>HERE</ListItem>
         </Appear>
       </UnorderedList>
+    </Slide>
+
+    <Slide>
+      <Heading>Biased Average Position Estimates</Heading>
+      <Text>
+        <span style={underline}>Reasoning</span>:
+      </Text>
+      <Appear>
+        <Text>HERE</Text>
+      </Appear>
     </Slide>
 
     <Slide>
