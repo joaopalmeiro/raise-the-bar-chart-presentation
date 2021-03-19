@@ -74,7 +74,7 @@ const template = ({ slideNumber, numberOfSlides }) => (
     <Box padding={2}>
       <FullScreen size={16} color={colors["nord3"]} />
     </Box>
-    {slideNumber === 1 ? (
+    {slideNumber === 1 || slideNumber === numberOfSlides ? (
       <Box padding="0px">
         <Text fontSize="16px">👋</Text>
       </Box>
@@ -206,12 +206,12 @@ const Presentation = () => (
       </Appear>
       <Appear>
         <Text>
-          It breaks a visual convention of bar charts (<i>proportionality</i>).
+          It <i>breaks</i> a visual convention of bar charts (proportionality).
         </Text>
       </Appear>
       <Appear>
         <Text>
-          Question: What is the{" "}
+          Umbrella question: What is the{" "}
           <span style={underline}>
             impact on subjective assessments of data
           </span>{" "}
@@ -233,7 +233,7 @@ const Presentation = () => (
     <Slide>
       <Heading>Aspect Ratio Biases Recall of Position Encodings</Heading>
       <Appear>
-        <Text>Experimental setup similar to the previous one</Text>
+        <Text>The experimental setup is similar to the previous one.</Text>
       </Appear>
     </Slide>
     <Slide>
@@ -241,6 +241,13 @@ const Presentation = () => (
     </Slide>
     <Slide>
       <Heading>Good Fonts for Dyslexia</Heading>
+    </Slide>
+    <Slide>
+      <FlexBox height="100%" flexDirection="column">
+        <Heading margin="0px" fontSize="150px">
+          Thanks (📊)
+        </Heading>
+      </FlexBox>
     </Slide>
   </Deck>
 );
