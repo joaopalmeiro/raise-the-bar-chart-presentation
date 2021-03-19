@@ -11,7 +11,8 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "spectacle": "^7.0.1"
+    "spectacle": "^7.0.1",
+    "victory": "^35.4.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.8",

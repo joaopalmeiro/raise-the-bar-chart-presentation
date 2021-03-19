@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { VictoryBar, VictoryChart, VictoryAxis, VictoryTheme } from "victory";
 
 import {
   FlexBox,
@@ -39,6 +40,13 @@ const underline = {
   // More info: https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset
   textUnderlineOffset: "0.05em",
 };
+
+const data = [
+  { quarter: 1, earnings: 13000 },
+  { quarter: 2, earnings: 16500 },
+  { quarter: 3, earnings: 14250 },
+  { quarter: 4, earnings: 19000 },
+];
 
 // SPECTACLE_CLI_THEME_START
 // Default theme: https://github.com/FormidableLabs/spectacle/blob/main/src/theme/default-theme.js
@@ -94,7 +102,7 @@ const template = ({ slideNumber, numberOfSlides }) => (
 
 const Presentation = () => (
   <Deck theme={theme} template={template}>
-    <Slide slideNum="1">
+    <Slide>
       <FlexBox height="100%" flexDirection="column">
         <Heading margin="0px" fontSize="150px">
           Raise the Bar (📊)
@@ -105,6 +113,83 @@ const Presentation = () => (
           Visualization
         </Text>
       </FlexBox>
+    </Slide>
+    <Slide>
+      {/* Theme: https://github.com/FormidableLabs/victory/blob/main/packages/victory-core/src/victory-theme/material.js */}
+      <VictoryChart theme={VictoryTheme.material} domainPadding={20}>
+        <VictoryAxis
+          dependentAxis
+          tickFormat={(x) => `$${x / 1000}k`}
+          style={{
+            axis: { stroke: colors["nord3"] },
+            ticks: { stroke: colors["nord3"] },
+            tickLabels: { fill: colors["nord3"] },
+            // https://github.com/FormidableLabs/victory/issues/1098
+            grid: { stroke: "none" },
+            tickLabels: { fontFamily: theme["fonts"]["text"] },
+          }}
+        />
+        <VictoryBar
+          barRatio={0.8}
+          data={data}
+          x="quarter"
+          y="earnings"
+          style={{ data: { fill: colors["nord9"] } }}
+        />
+        <VictoryAxis
+          tickValues={[1, 2, 3, 4]}
+          tickFormat={["Quarter 1", "Quarter 2", "Quarter 3", "Quarter 4"]}
+          style={{
+            axis: { stroke: colors["nord3"] },
+            ticks: { stroke: colors["nord3"] },
+            tickLabels: { fill: colors["nord3"] },
+            grid: { stroke: "none" },
+            tickLabels: { fontFamily: theme["fonts"]["text"] },
+          }}
+        />
+      </VictoryChart>
+    </Slide>
+    <Slide>
+      <Heading>“It's Over 9000!”</Heading>
+      <Text>
+        📄 <span style={underline}>Truncating the Y-Axis</span>: Threat or
+        Menace?
+      </Text>
+      <Text>🧑‍🤝‍🧑 M. Correll, E. Bertini, S. Franconeri</Text>
+      <Text>🗓️ 2020</Text>
+    </Slide>
+    <Slide>
+      <Heading>
+        “Playing <i>Operation</i> is easier”
+      </Heading>
+      <Text>
+        📄 <span style={underline}>Biased Average Position Estimates</span> in
+        Line and Bar Graphs: Underestimation, Overestimation, and Perceptual
+        Pull
+      </Text>
+      <Text>🧑‍🤝‍🧑 C. Xiong, C. Ceja, C. Ludwig, S. Franconeri</Text>
+      <Text>🗓️ 2020</Text>
+    </Slide>
+    <Slide>
+      <Heading>“It's not you, it's me”</Heading>
+      <Text>
+        📄 Truth or Square: <span style={underline}>Aspect Ratio</span> Biases
+        Recall of Position Encodings.
+      </Text>
+      <Text>🧑‍🤝‍🧑 C. Ceja, C. McColeman, C. Xiong, S. Franconeri</Text>
+      <Text>🗓️ 2021</Text>
+    </Slide>
+    <Slide>
+      <Heading>“No pajamas all day”</Heading>
+      <Text>📄 Readability and Precision in Pictorial Bar Charts</Text>
+      <Text>🧑‍🤝‍🧑 D. Skau, R. Kosara</Text>
+      <Text>🗓️ 2017</Text>
+    </Slide>
+    <Slide>
+      <Heading>“Tower of Pisa yes, italics no”</Heading>
+      <Text>📄 Good Fonts for Dyslexia</Text>
+      <Text>🧑‍🤝‍🧑 L. Rello, R. Baeza-Yates</Text>
+      <Text>🗓️ 2013</Text>
     </Slide>
   </Deck>
 );
