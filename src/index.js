@@ -379,8 +379,7 @@ const Presentation = () => (
         </ListItem>
         <Appear>
           <ListItem>
-            The error in estimating trend was not significantly different across
-            levels of truncation
+            The error in estimating trend was not significantly different
           </ListItem>
         </Appear>
         <Appear>
@@ -397,26 +396,77 @@ const Presentation = () => (
       <Appear>
         <Text>
           We cannot rely on visual indicators of truncated axes — the subjective
-          impact of axis truncation is persistent across visualizations designs
+          impact of axis truncation is persistent across visualizations designs.
         </Text>
       </Appear>
       <Appear>
         <Text>
           We have a great deal of control over the perceived effect size — we
           have to take into account what we want to communicate at a per-data
-          and per-task level
+          and per-task level.
         </Text>
       </Appear>
     </Slide>
 
     <Slide>
-      <Heading>
-        Biased Average Position Estimates in Line and Bar Graphs
-      </Heading>
+      <Heading>Biased Average Position Estimates</Heading>
+      <Appear>
+        <Text>Position is one of the most precise encoding channels.</Text>
+      </Appear>
+      <Appear>
+        <Text>
+          However, perception of data from positional encodings can also be
+          biased in systematic ways.*
+        </Text>
+      </Appear>
+      <Appear>
+        <Text>
+          *For reports of average position across a short delay (at least).
+        </Text>
+      </Appear>
     </Slide>
 
     <Slide>
-      <Heading>Aspect Ratio Biases Recall of Position Encodings</Heading>
+      <Heading>Biased Average Position Estimates</Heading>
+      <Text>
+        They conducted 3 experiments with students from Northwestern University.
+      </Text>
+      <Appear>
+        <Text>They used noisy/uniform line/bar charts.</Text>
+      </Appear>
+    </Slide>
+
+    <Slide>
+      <Heading>Biased Average Position Estimates</Heading>
+      <Text>
+        Experiment 1: How accurate can people perceive average positions of a
+        single line or single set of bars in a chart?
+      </Text>
+      <Appear>
+        <Text>Experiment 2: What about two lines or two sets of bars?</Text>
+      </Appear>
+      <Appear>
+        <Text>
+          Experiment 3: What about a line and a set of bars on the same chart?
+        </Text>
+      </Appear>
+    </Slide>
+
+    <Slide>
+      <Heading>Biased Average Position Estimates</Heading>
+      <Text>
+        <span style={underline}>Main conclusions</span> (statistically
+        speaking):
+      </Text>
+      <UnorderedList>
+        <Appear>
+          <ListItem></ListItem>
+        </Appear>
+      </UnorderedList>
+    </Slide>
+
+    <Slide>
+      <Heading>Aspect Ratio Biases</Heading>
       <Appear>
         <Text>The experimental setup is similar to the previous one.</Text>
       </Appear>
