@@ -1,12 +1,14 @@
 {
-  "Appear + Text": {
+  "<Appear /> + <Text />": {
+    "scope": "javascript",
     "prefix": ["appear"],
-    "body": ["<Appear><Text>$0</Text></Appear>"],
-    "description": "Combining Appear and Text."
+    "body": ["<Appear><Text>$1</Text></Appear>"],
+    "description": "Combine the `<Appear />` and `<Text />` components."
   },
-  "span + underline": {
+  "<span> + .underline": {
+    "scope": "javascript",
     "prefix": ["underline"],
-    "body": ["<span style={underline}>$0</span>"],
-    "description": "Combining span and the underline class."
+    "body": ["<span style={underline}>$1</span>"],
+    "description": "Combine the HTML `<span>` tag and the CSS `.underline` (custom) class."
   }
 }

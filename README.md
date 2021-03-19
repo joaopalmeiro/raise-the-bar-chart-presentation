@@ -31,3 +31,4 @@ npm run build
 - [rimraf](https://github.com/isaacs/rimraf): `rm -rf` for Node.js.
 - [API documentation](https://formidable.com/open-source/spectacle/docs/api-reference/).
 - [Nord colors](https://www.nordtheme.com/docs/colors-and-palettes).
+- [Language identifiers in VS Code](https://code.visualstudio.com/docs/languages/identifiers#_known-language-identifiers).
