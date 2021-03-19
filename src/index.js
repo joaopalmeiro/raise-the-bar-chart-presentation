@@ -208,7 +208,7 @@ const Presentation = () => (
       <Appear>
         <Text>
           Truncating the Y-axis can be beneficial or harmful (depending on the
-          type and purpose).
+          chart type and purpose).
         </Text>
       </Appear>
       <Appear>
@@ -228,7 +228,7 @@ const Presentation = () => (
       <Heading>Truncating the Y-Axis</Heading>
       <Appear>
         <Text>
-          Umbrella question: What is the{" "}
+          What is the{" "}
           <span style={underline}>
             impact on subjective assessments of data
           </span>{" "}
@@ -439,15 +439,20 @@ const Presentation = () => (
     <Slide>
       <Heading>Biased Average Position Estimates</Heading>
       <Text>
-        Experiment 1: How accurate can people perceive average positions of a
-        single line or single set of bars in a chart?
+        <span style={underline}>Experiment 1</span>: How accurate can people
+        perceive average positions of a single line or single set of bars in a
+        chart?
       </Text>
       <Appear>
-        <Text>Experiment 2: What about two lines or two sets of bars?</Text>
+        <Text>
+          <span style={underline}>Experiment 2</span>: What about two lines or
+          two sets of bars?
+        </Text>
       </Appear>
       <Appear>
         <Text>
-          Experiment 3: What about a line and a set of bars on the same chart?
+          <span style={underline}>Experiment 3</span>: What about a line and a
+          set of bars on the same chart?
         </Text>
       </Appear>
     </Slide>
@@ -593,19 +598,19 @@ const Presentation = () => (
     <Slide>
       <Heading>Aspect Ratio Biases</Heading>
       <Text>
-        Experiment 1: Does the aspect ratio impact the position estimate
-        (constant area)?
+        <span style={underline}>Experiment 1</span>: Does the aspect ratio
+        impact the position estimate (constant area)?
       </Text>
       <Appear>
         <Text>
-          Experiment 2: What about the area (another incidental visual
-          property)?
+          <span style={underline}>Experiment 2</span>: What about the area
+          (another incidental visual property)?
         </Text>
       </Appear>
       <Appear>
         <Text>
-          Experiment 3 (sanity check): How much of this bias is driven by
-          memory?
+          <span style={underline}>Experiment 3</span> (sanity check): How much
+          of this bias is driven by memory?
         </Text>
       </Appear>
     </Slide>
@@ -632,6 +637,16 @@ const Presentation = () => (
             Bars in the tall condition were significantly underestimated
           </ListItem>
         </Appear>
+      </UnorderedList>
+    </Slide>
+
+    <Slide>
+      <Heading>Aspect Ratio Biases</Heading>
+      <Text>
+        <span style={underline}>Main conclusions</span> (statistically
+        speaking):
+      </Text>
+      <UnorderedList>
         <Appear>
           <ListItem>
             In comparison, bars with square and wide aspect ratios were not
@@ -641,8 +656,7 @@ const Presentation = () => (
         <Appear>
           <ListItem>
             Any error could be attributed to any of these components: memory,
-            perception, and motor error. Memory is what is at stake in this
-            study.
+            perception, and motor error. Memory is what is at stake here
           </ListItem>
         </Appear>
       </UnorderedList>
@@ -670,10 +684,7 @@ const Presentation = () => (
         <Text>What about beautifying our bar charts?</Text>
       </Appear>
       <Appear>
-        <Text>
-          They conducted 1 crowdsourced online experiment with absolute and
-          relative comparisons.
-        </Text>
+        <Text>They conducted 1 crowdsourced online experiment.</Text>
       </Appear>
       <Appear>
         <Text>
