@@ -38,6 +38,28 @@ npm run build
 ## Development
 
 - Install [ImageMagick](https://imagemagick.org/) to run the `merge` script.
+- Export PDF:
+  - `http://localhost:8080/?exportMode=true`.
+  - `<Appear />` tags may not appear. In that case, remove them before exporting the PDF.
+
+Monkey patch the following DeckTape function (`decktape.js` file) to generate screenshots with better resolution:
+
+```js
+function parseSize(size) {
+  const match = size.match(/^(\d+)x(\d+)$/);
+  if (match) {
+    const [, width, height] = match;
+    return {
+      width: parseInt(width, 10),
+      height: parseInt(height, 10),
+      // Add this argument to generate screenshots with better resolution
+      deviceScaleFactor: 3,
+    };
+  } else {
+    return "<size> must follow the <width>x<height> notation, e.g., '1280x720'";
+  }
+}
+```
 
 ## Notes
 
@@ -51,4 +73,4 @@ npm run build
   - `` `npm bin`/decktape generic -h ``.
   - Download Chromium manually ([source](https://stackoverflow.com/a/60843949)): `node node_modules/decktape/node_modules/puppeteer/install.js` (the error was not due to the version of [ChromeDriver](https://chromedriver.chromium.org/)).
   - Use `--max-slides` to prevent the export from being endless ([source](https://github.com/astefanutti/decktape/issues/77#issuecomment-262747521)).
-- `http://localhost:8080/?exportMode=true`.
+- [`page.setViewport()`](https://pptr.dev/#?product=Puppeteer&version=v5.1.0&show=api-pagesetviewportviewport) (Puppeteer documentation).

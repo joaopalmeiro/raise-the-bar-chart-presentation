@@ -7,9 +7,9 @@
     "build": "webpack",
     "start": "webpack-dev-server --hot",
     "pdf": "decktape generic --size=1920x1080 --max-slides=98 http://localhost:8080/ slides.pdf",
-    "pdf2": "decktape generic --size=1920x1080 --max-slides=98 --screenshots --screenshots-size=1920x1080 dist/index.html slides.pdf",
-    "export": "npm run build && npm run pdf2",
-    "merge": "convert screenshots/slides_* slides.pdf"
+    "pdf2": "decktape generic --size=1920x1080 --max-slides=98 --screenshots --screenshots-size=1280x720 dist/index.html slides.pdf",
+    "merge": "convert screenshots/slides_* slides.pdf",
+    "export": "npm run build && npm run pdf2 && npm run merge"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
